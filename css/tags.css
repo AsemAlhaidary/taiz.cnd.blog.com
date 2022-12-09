@@ -9,6 +9,11 @@
   --smallFontSize: 0.6em;
   --fontFamily: 'Poppins';
 }
+@media screen and (min-width: 1440px) {
+  :root {
+    --sitePadding: 10vw;
+  }
+}
 html[data-theme="light"] {
   --primary: #e9eff2;
   --secondary: #f9fbfc;

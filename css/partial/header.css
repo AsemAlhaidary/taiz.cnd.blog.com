@@ -4,6 +4,9 @@
   left: 0;
   height: var(--navBarHeight);
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transition: 0.3s ease-in-out;
   z-index: 5;
 }

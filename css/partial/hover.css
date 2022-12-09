@@ -44,4 +44,11 @@
   .recommended .recommendedContainer .recommendedPost:focus-within a .content .readMore .readMoreText {
     opacity: 1;
   }
+  .postsContainer .post .backgroundSect:hover .background,
+  .postsContainer .post .backgroundSect:focus-within .background {
+    transform: scale(1.1);
+  }
+  .postsContainer .post .backgroundSect .background {
+    transition: 0.3s ease-in-out;
+  }
 }

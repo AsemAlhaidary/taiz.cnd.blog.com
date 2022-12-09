@@ -1,0 +1,57 @@
+@media screen and (min-width: 844px) and (orientation: landscape) {
+  #search:checked ~ .header .navBar .search::after {
+    background-color: var(--secondary);
+    opacity: 1;
+  }
+  .searchSection #localSearchResult {
+    max-height: calc(100vh - var(--navBarHeight) - (var(--edgeSpacing) * 2) - (var(--iconSize) * 4));
+  }
+  .header {
+    padding: 0 var(--sitePadding);
+  }
+  .header.onTop {
+    box-shadow: unset;
+  }
+  .header .logoImage {
+    padding: unset;
+    height: auto;
+    width: auto;
+    display: block;
+    box-shadow: unset;
+  }
+  .header .navBar {
+    position: static;
+    height: auto;
+    gap: 1em;
+    border-radius: unset;
+    box-shadow: unset;
+  }
+  .header .navBar .search,
+  .header .navBar .navButton {
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  .header .navBar .search {
+    position: relative;
+  }
+  .header .navBar .search::after {
+    width: unset;
+    height: unset;
+    top: -0.5em;
+    left: -0.5em;
+    right: -0.5em;
+    bottom: -0.5em;
+  }
+  .footer {
+    padding-bottom: 1em;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .hero .heroImage .image {
+    aspect-ratio: 4/1;
+  }
+  .postsContainer .post {
+    max-width: 55em;
+    flex-direction: row;
+  }
+}

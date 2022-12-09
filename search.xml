@@ -4,23 +4,110 @@
   
     
     <entry>
-      <title>مبدأ عمل أدوات إدارة الشبكة</title>
-      <link href="/taiz.cnd.blog.com/2022/12/08/network/network/"/>
-      <url>/2022/12/08/network/network/</url>
-      <published>Thu Dec 08 2022 20:55:52 GMT+0300</published>
-      <modified>Fri Dec 09 2022 02:44:33 GMT+0300</modified>
+      <title>برامج يستخدمها مهندسين الشبكات</title>
+      <link href="/taiz.cnd.blog.com/2022/12/09/progrm/progrm/"/>
+      <url>/2022/12/09/progrm/progrm/</url>
+      <published>Fri Dec 09 2022 17:37:14 GMT+0300</published>
+      <modified>Fri Dec 09 2022 18:57:15 GMT+0300</modified>
       
-        <content type="html"><![CDATA[<h2 id="مبدأ-عمل-أدوات-إدارة-الشبكة"><a href="#مبدأ-عمل-أدوات-إدارة-الشبكة" class="headerlink" title="مبدأ عمل أدوات إدارة الشبكة"></a>مبدأ عمل أدوات إدارة الشبكة</h2><p>تتضمن مجموعة كاملة من أدوات إدارة الشبكة أدوات النسخ الاحتياطي للأمان وأدوات المراقبة وغالباً ما تكون هذه الأدوات مفيدة في مراقبة أداء الشبكة، مثل اتصالاتها وأوقات تشغيل الخادم وأوقات تعطله وكما أنّها مهمة في تحليل الأنشطة الجارية في الشبكة والإبلاغ عنها، وتتضمن مجموعة الأدوات هذه عادةً واجهة مستخدم تتيح إدارة شبكة الشخص عن بُعد عبر الإنترنت أو عميل سطح مكتب من كمبيوتر آخر أو من جهاز محمول.<br>يركز استخدام أدوات مراقبة الشبكة بشكل أكبر على أنشطة المراقبة في الشبكة وغالباً ما يسمح بالإخطار عبر البريد الإلكتروني أو رسائل الجهاز المحمول بأي فشل أو انقطاع في الاتصال، وتتألف المشكلات الشائعة التي تم الكشف عنها بواسطة أدوات مراقبة الشبكة تعطل الخادم وفشل اتصالات الشبكة والأنظمة المحملة بشكل زائد<br>تراقب هذه الأدوات أيضاً الروابط المختلفة عن طريق إرسال تحقيقات باستمرار عبر الشبكة للتحقق مما إذا كانت جميع الروابط والوصلات سليمة ومستقرة، وبصرف النظر عن هذه المهام تعمل أدوات مراقبة الشبكة أيضاً على تحسين طرق التوجيه والخوارزميات للحفاظ على الأداء الأمثل ومنع تعطل الشبكة.<br>يُعد الأمان من أهم المجالات في إدارة الشبكة وتتمثل الأهداف الرئيسية لأدوات أمان الشبكة في الحفاظ على تكامل الشبكة ومنع الهجمات الضارة على الخوادم والأنظمة داخل الشبكة، كما تقوم هذه الأدوات عادةً بذلك عن طريق التحقق من ضعف اتصالات الشبكة والخوادم، وعادةً ما يقومون بمسح البيانات التي تدخل وخارج الشبكة ويلتقطون أي شيء يثير الإنذارات.<br>كما يتم تثبيت هذه الأدوات أولاً قبل بدء تشغيل الشبكة لتقليل مخاطر الأنشطة الضارة ويمكن استخدام أدوات شبكة النسخ الاحتياطي على الخوادم الفردية أو أجهزة الكمبيوتر، ويمكن أيضاً استخدام هذا النوع من أدوات الشبكة لإجراء نسخ احتياطي للبيانات المنتشرة عبر الشبكة.<br>عادة يتم نسخ البيانات احتياطياً على خادم واحد ولكن في إعدادات الشبكة غالباً ما يكون من المفيد وجود نسخ احتياطية متعددة لزيادة أمان البيانات، وتعمل معظم أدوات الشبكة الاحتياطية هذه جنباً إلى جنب مع أدوات الأمان والمراقبة للتأكد من أنّ البيانات التي يتم إرسالها عبر الشبكة آمنة ولن تضيع.</p>]]></content>
+        <content type="html"><![CDATA[<p>لاشك ان عالم الشبكات والانترنت هو عالم ممتع وشيق ولكن صعب ويحتاج الى خبرات طويلة للتعامل معه وفهم كيفية ادارته باحترافية شديدة مثل انواع الشبكات وانواع كابلات الانترنت الرئيسية وكلنا نعلم ان افضل الشركات العالمية فى مجال شبكات الانترنت هى شركة سيسكو العملاقة والموجودة بالولايات المتحدة الامريكية ، ولكى تحصل الى مرحلة الخبير والاحتراف عليك بتجاوز وتعلم والحصول على ثلاثة شهادات رئيسية فى مجال الشبكات من شركة Cisco.<br>وهذه الشهادات هى بالترتيب وعلى التوالى الاولى Cisco Certified Network Associate (CCNA) او زميل معتمد من سيسكووالثانية شهادة (Cisco Certified Network Professional (CCNP محترف فى مجال الشبكات من سيسكو، والثالثة هى شهادة Cisco Certified Internetwork Expert (CCIE) اى خبير فى مجال الشبكات من شركة سيسكو وهى الاعلى بالطبع.<br>وبالنسبة للمهندسين والخبراء والعاملين فى مجال الشبكات فانهم يستخدمون او لهم تطبيقات اندرويد معينة خاصة بمجال عملهم تختلف عن اى تطبيقات اخرى يستعملها اشخاص عاديين ، لانها تطبيقات متخصصة واحترافية ، وهذا ما سوف نتعرف عليه معا.</p><p><strong>البرامج</strong><br>1- تطبيق IP Network Calculator<br>طبيق بمثابة الة حاسبة يستخدمه مهندسى الشبكات والخبراء فى انشاء شبكات فرعية و تقسيم ال network&#x2F;subnet&#x2F;IP وايضا تحديد نوعية البروتوكول الذى تستخدمه الشبكة سواء كان ipv4 او ipv6.</p><p>2- تطبيق ES File Explorer File Manager<br>تطبيق مميز لادارة الملفات الموجودة على خدمات التخزين السحابية مثل Dropbox و Google Drive و Sky Drive و Box.net و Sugarsync و Yandex و Ubuntu One وهناك استخدامات اخري له فمثلا يستطيع ان يعمل ايضا كـ FTP client وبذلك هو يوفر الوصول إلى الملفات من اجهزة الكمبيوتر والخوادم ايضا.</p><p>3- تطبيق VNC Viewer<br>من أحد أفضل التطبيقات التى تستخدم في الوصول عن بعد إلى أنظمة تشغيل الكمبيوتر والخوادم والسيرفرات مثل لينكس وويندوز وماك عن طريق RDP أو VNC أو VMware View مع وجود خيارات عديدة للأتصال وتحديد بروتوكول التشفير المستخدم ، ومن مميزاته العمل من خلال شبكات 3G&#x2F;4G أو حتى شبكات Wi-Fi.</p><p>4- تطبيق VirtualBox Manager<br>هذا التطبيق له نسخة مجانية ونسخة اخرى مدفوعة والنسخة المجانية من هذا التطبيق تتيح إمكانية مراقبة والتحكم والاتصال بأنظمة التشغيل الوهمية التى تقوم بتنصيبها على برنامج VirtualBox.</p><p>5- تطبيق ConnectBot</p><p>هو تطبيق مفتوح المصدر او بمثابة نظام مفتوح المصدر OPEN SOURCE ويعمل على تأمين الأتصال بين المستخدم والخادم ببروتوكول SSH أو telnet .</p><p>6- تطبيق Netalyzr<br>تطبيق هام جدا يقوم بتحليل خصائص الأتصال بالأنترنت ويظهر لنا الخدمات التى تم حجبها ويفحص خوادم الـ DNS المستخدمة ويقوم بفحص سرعة الـ bandwidth و NAT ثم يقدم تقرير مفصل على أبرز المشاكل التى تم تحديدها والتعرف عليها.</p><p>7- تطبيق Fing - Network Tools<br>تطبيق رائع يشمل عدة أدوات مهمة وظيفتها ان تقوم باكتشاف الشبكة المتصل بها ويقوم بفحص منافذ الـ TCP ويقوم بعمل ping للاجهزة التى تم اكتشافها داخل الشبكة و عمل traceroute و port scan و DNS lookup و Wake on LAN.</p><p>ملحوظة هامة : عزيزى القارىء للمصداقية هذه التطبيقات يوجد منها تطبيقات مجانى تماما وتطبيقات اخرى مجانى ومدفوع فى نفس الوقت ايضا مع اختلاف المميزات بالطبع ، وعليك اختيار ما يناسبك انت.</p>]]></content>
+      
+      
+      <categories>
+        
+        <category>البرامج</category>
+        
+      </categories>
+      
+      
+        <tags>
+          
+          <tag>مهندس الشبكات</tag>
+          
+          <tag>شركات</tag>
+          
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>مهندس الشبكات</title>
+      <link href="/taiz.cnd.blog.com/2022/12/09/engerring/engerring/"/>
+      <url>/2022/12/09/engerring/engerring/</url>
+      <published>Fri Dec 09 2022 16:48:09 GMT+0300</published>
+      <modified>Fri Dec 09 2022 18:57:15 GMT+0300</modified>
+      
+        <content type="html"><![CDATA[<p><strong>من هو مهندس الشبكات</strong><br>مهندس الشبكات هو ذاك الشخص المسؤول بشكل مباشر عن إنشاء شبكات الكمبيوتر وتحديثها باستمرار بأحدث الإصدارات، وهو المسؤول الأول عن صيانة الشبكات داخل المؤسسة أو المنظمة التي يعمل بها، والعمل الأساسي الذي يقوم به مهندس الشبكات هو<br>تقديم الدعم للعملاء الذين يستخدمون الشبكة.<br>إيجاد حلول للمشكلات التي قد تواجه العملاء، والعمل على حلها وإصلاحها.<br>تصميم شبكات جديدة للشركة.<br>ضمان تكامل البنية التحتية وتوفير شبكة اتصالات عالية الجودة لتوفير أقصى فائدة للمستخدمين.<br>ومن الجدير ذكره أن مهندس الشبكات يمكنه العمل داخليًا كجزء من فريق دعم تكنولوجيا المعلومات التابع للمؤسسة التي يعمل بها، أو خارجيًا كأن يعمل مع شركة استشارية خاصة بشبكات تكنولوجيا المعلومات والتي تعمل في العادة مع عدد من العملاء.</p><p><strong>مجالات عمل مهندس الشبكات</strong><br>فيما يلي قائمة بمجالات العمل التي يمكن لمهندس الشبكات العمل بها:</p><p>مدير شبكات.<br>محلل شبكات.<br>أخصائي شبكة.<br>فني شبكات.<br>مهندس حلول الشبكات.<br>مطور برامج.<br>مطور ويب.<br>مهندس بيانات.<br>مطور برامج متكامل.<br>مسؤول قاعدة البيانات.<br>محلل نظم الكمبيوتر.<br>محلل برمجيات.</p><p><strong>مسؤوليات مهندس الشبكات</strong><br>هناك العديد من المسؤوليات التي تقع على عاتق مهندس الشبكات والتي يمكن إدراجها فيما يلي:</p><p>إنشاء بيئة الشبكات من خلال إنشاء وتصميم بيئة النظام الخاص بالشبكات، وتوجيهه وتحديد وتوثيق جميع المعايير التي تخص نظام الشبكات.<br>العمل على إيجاد حلول جديدة، وتحسين أداء الشبكة الحالية<br>العمل على تحسين أداء الشبكة من خلال مراقبة الأداء، واستكشاف المشاكل قبل وقوعها، ومراقبة أداء الشبكة، والعمل على تحسينها باستمرار.<br>تحري الأخطاء والتعرف على الأسباب التي أدت إلى ظهورها باستخدام المعلومات من مصادر متعددة.<br>وضع السياسات المناسبة التي تساهم في تأمين أنظمة الشبكات وتحديد الوصول ومراقبته.<br>توفير جدار حماية مناسب يتماشى مع سياسة أمن تكنولوجيا المعلومات التي تتبعها الشركة.<br>الإبلاغ عن أي محاولة لتشغيل الشبكة، ويكون ذلك من خلال جمع المعلومات وترتيبها حسب الأولوية.<br>توفير أحدث الإصدارات من البرامج الثابتة المستقرة والعمل على ترقيتها باستمرار.<br>تقديم النصائح للمهندسين الذين يعملون في موقع الشبكات بشكل مباشر، وتقديم الدعم للعملاء بعد الانتهاء من تثبيت الشبكة.<br>اكتشاف الأخطاء عن بُعد في حالة حدوثها في مرحلة التثبيت الأولي.</p><p><strong>مهارات يجب أن تتواجد في مهندس الشبكات</strong></p><p>بالإضافة إلى الدرجة العلمية التي يطلب من مهندس الشبكات الحصول عليها والتي تكون في العادة في علوم الحاسوب أو أنظمة الكمبيوتر والشبكات أو الهندسة الكهربائية، لا بد من التحلي ببعض المهارات الضرورية والتي تتمثل في الآتي:</p><p>امتلاك عقل تحليلي قادر على إيجاد المشكلات وتحليلها.<br>القدرة على تعلم التقنيات الجديدة التي تتطور باستمرار بسرعة.<br>القدرة على إدارة الوقت بشكل جيد.<br>القدرة على متابعة العمليات الخاصة بالشبكات.<br>امتلاك مهارات حفظ قوية كي يتكمن من التوثيق.<br>امتلاك مهارات تواصل كتابية ولفظية جيدة.<br>امتلاك بعض المهارات التجارية.</p><p><strong>الراتب المحتمل لمهندس الشبكات</strong><br>مع هذا النمو الهائل في التكنولوجيا الذي يشهده العالم زاد الطلب على مهندسي الشبكات بشكل كبير، حيث تبحث معظم الشركات عن مهندسين محترفين وموهوبين ومعتمدين للعمل معهم، لذا يختلف الراتب الذي يتقاضاه مهندس الشبكات باختلاف العديد من العوامل مثل الشركة التي يعمل بها والدور الوظيفي الذي يقوم به، والخبرة التي يمتلكها المهندس، لكن بالمجمل يتراوح الراتب الذي يبدأ به مهندس الشبكات عمله بين 47 ألف دولار إلى 58 ألف دولار، بينما يتراوح متوسط ​​راتب مهندس الشبكة بين 59 ألف دولار و 71 ألف دولار في السنة، وأعلى راتب يمكن لمهندس الشبكات الحصول عليه هو 86 ألف دولار.</p><p><strong>البرامج الهندسية المفيدة لمهندس الشبكات</strong><br>يعتمد عمل مهندس الشبكات على استخدام الحاسوب بشكل كبير، لذا لا بد من استخدام بعض البرامج التي تسهل العمل وتوفر الوقت والجهد على مهندس الشبكات، فيما يلي بعض هذه البرامج:</p><p>برنامج Super PuTTY: هو عبارة عن برنامج محاكاة طرفي يتيح الاتصال بأي جهاز شبكة، يتميز بأنه برنامج خفيف الوزن وسهل الاستخدام، ويمكن للمهندس تشغيله فقط دون تثبيته على الجهاز، وهو برنامج مجاني، والأهم من ذلك كله أنه يتيح للمهندس حفظ الجلسات في حال تثبيته.<br>برنامج Notepad ++: يمتلك هذا البرنامج العديد من المميزات التي تجعله من أهم البرامج، أهمها أنه يمكن للمهندس فتح ملفات متعددة في علامات تبويب، كما هو الحال في متصفح علامات تبويب الإنترنت، وكذلك يعمل برنامج Notepad على حفظ جميع الملفات حتى تلك التي لم يقم المهندس بحفظها.<br>برنامج WireShark: هذا البرنامج يسمح للمهندس بتحليل تدفق الحزم والبحث عن حزم محددة، كما يسمح للمستخدم بالتقاط الحزم داخل وخارج جهاز الكمبيوتر الخاص به، إضافة إلى ذلك هو برنامج مفتوح المصدر ومجاني، وقابل للتثبيت.</p>]]></content>
+      
+      
+      <categories>
+        
+        <category>شبكات</category>
+        
+      </categories>
+      
+      
+        <tags>
+          
+          <tag>الاجهزه</tag>
+          
+          <tag>مجال الشبكات</tag>
+          
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Basic computer networking</title>
+      <link href="/taiz.cnd.blog.com/2022/12/09/computer-networking/computer-networking/"/>
+      <url>/2022/12/09/computer-networking/computer-networking/</url>
+      <published>Fri Dec 09 2022 02:57:42 GMT+0300</published>
+      <modified>Fri Dec 09 2022 18:57:15 GMT+0300</modified>
+      
+        <content type="html"><![CDATA[<h3 id="Basics-of-computer-networking"><a href="#Basics-of-computer-networking" class="headerlink" title="Basics of computer networking"></a>Basics of computer networking</h3><p>Below are several core concepts in computer networking that a networking professional would be required to know:</p><ul><li>LAN vs. WAN</li><li>Clients and servers</li><li>DNS lookup &amp; IP addresses</li><li>Ethernet</li><li>Default gateway</li><li>Routers and switches</li><li>LAN vs. WAN</li></ul><p>A local area network (LAN) is a network that connects computing devices in the same relative vicinity. This could be an office building or a residential home where a local network is required for sharing resources. A wide area network, or (WAN), is a network that is geographically boundless, and instead relies on DNS protocols and IP addresses.</p><p><strong>Clients and servers</strong><br>A server is simply a large computer that holds services, images, digital video, internet protocols and more things that a client can access. A client is a computing device that reaches out to a server to access information and data. The client can be a home computer, a personal computing device like a tablet, smartphone or laptop, or it can even be an entity like a browser interacting with an API.</p><p><strong>DNS lookup &amp; IP addresses</strong><br>Domain naming system, or DNS, as it’s commonly known, is a foundational piece of network infrastructure. That’s because the DNS maps the domain name to an IP address. The reason that a domain name takes you to a webpage when you type it into your browser bar is because of DNS lookup retrieving the IP address that goes to the domain name.</p><p>An IP address is basically a network address for any device that is accessing the internet. It is mapped to other things, like email addresses, so that you can receive data, like an email for instance. The IP address mapped to a given email tells the internet where to send it to when it performs the function of delivering an email.</p><p>IP addresses can either be manually configured to a DNS server or they are received via Dynamic Host Configuration Protocol. Either way, they can be viewed by performing an IPCONFIG &#x2F;ALL in Windows.</p><p><strong>Ethernet</strong><br>In plain terms, Ethernet is a protocol to LAN. It is a cable composed of necessary components to connect a computing device to a network, like a network interface card (NIC). It’s the most popular product for connecting LAN networks and has been the top choice since the 1990s for reliability and ease of use. Ethernet devices can be easily identified by their MAC address. Using address resolution protocol (or ARP), network engineers can map an IP address to a MAC address, which gives each computing device that connects to the Internet a unique identifier.</p><p><strong>Default gateway</strong><br>When your computer interacts with other computing devices that are not on your LAN, it does so by accessing a default gateway. The default gateway is accessible because of a piece of equipment called a router. Routers are important tools that network professionals use daily.</p><p><strong>Routers and switches</strong><br>The purpose of a router is to send traffic to IP subnets, as is the case when they offer a gateway for computing devices to go from LAN to WAN networks. Routers can offer additional features that include security additions, like firewalls, and increased functionality with multi-port switches.</p><p>Switches are used to connect computers to a LAN network. These work by switching frames based on MAC address information received. Network administrators are required to be skilled in connecting to both LAN and WAN. Routers and switches are an essential part of doing that.</p>]]></content>
       
       
       
         <tags>
           
-          <tag>tag1</tag>
+          <tag>الشبكات</tag>
           
-          <tag>tag2</tag>
+          <tag>اجهزه</tag>
           
-          <tag>tag3</tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>مبدأ عمل أدوات إدارة الشبكة</title>
+      <link href="/taiz.cnd.blog.com/2022/12/08/network/network/"/>
+      <url>/2022/12/08/network/network/</url>
+      <published>Thu Dec 08 2022 20:55:52 GMT+0300</published>
+      <modified>Fri Dec 09 2022 18:57:15 GMT+0300</modified>
+      
+        <content type="html"><![CDATA[<h2 id="مبدأ-عمل-أدوات-إدارة-الشبكة"><a href="#مبدأ-عمل-أدوات-إدارة-الشبكة" class="headerlink" title="مبدأ عمل أدوات إدارة الشبكة"></a>مبدأ عمل أدوات إدارة الشبكة</h2><p>تتضمن مجموعة كاملة من أدوات إدارة الشبكة أدوات النسخ الاحتياطي للأمان وأدوات المراقبة وغالباً ما تكون هذه الأدوات مفيدة في مراقبة أداء الشبكة، مثل اتصالاتها وأوقات تشغيل الخادم وأوقات تعطله وكما أنّها مهمة في تحليل الأنشطة الجارية في الشبكة والإبلاغ عنها، وتتضمن مجموعة الأدوات هذه عادةً واجهة مستخدم تتيح إدارة شبكة الشخص عن بُعد عبر الإنترنت أو عميل سطح مكتب من كمبيوتر آخر أو من جهاز محمول.<br>يركز استخدام أدوات مراقبة الشبكة بشكل أكبر على أنشطة المراقبة في الشبكة وغالباً ما يسمح بالإخطار عبر البريد الإلكتروني أو رسائل الجهاز المحمول بأي فشل أو انقطاع في الاتصال، وتتألف المشكلات الشائعة التي تم الكشف عنها بواسطة أدوات مراقبة الشبكة تعطل الخادم وفشل اتصالات الشبكة والأنظمة المحملة بشكل زائد<br>تراقب هذه الأدوات أيضاً الروابط المختلفة عن طريق إرسال تحقيقات باستمرار عبر الشبكة للتحقق مما إذا كانت جميع الروابط والوصلات سليمة ومستقرة، وبصرف النظر عن هذه المهام تعمل أدوات مراقبة الشبكة أيضاً على تحسين طرق التوجيه والخوارزميات للحفاظ على الأداء الأمثل ومنع تعطل الشبكة.<br>يُعد الأمان من أهم المجالات في إدارة الشبكة وتتمثل الأهداف الرئيسية لأدوات أمان الشبكة في الحفاظ على تكامل الشبكة ومنع الهجمات الضارة على الخوادم والأنظمة داخل الشبكة، كما تقوم هذه الأدوات عادةً بذلك عن طريق التحقق من ضعف اتصالات الشبكة والخوادم، وعادةً ما يقومون بمسح البيانات التي تدخل وخارج الشبكة ويلتقطون أي شيء يثير الإنذارات.<br>كما يتم تثبيت هذه الأدوات أولاً قبل بدء تشغيل الشبكة لتقليل مخاطر الأنشطة الضارة ويمكن استخدام أدوات شبكة النسخ الاحتياطي على الخوادم الفردية أو أجهزة الكمبيوتر، ويمكن أيضاً استخدام هذا النوع من أدوات الشبكة لإجراء نسخ احتياطي للبيانات المنتشرة عبر الشبكة.<br>عادة يتم نسخ البيانات احتياطياً على خادم واحد ولكن في إعدادات الشبكة غالباً ما يكون من المفيد وجود نسخ احتياطية متعددة لزيادة أمان البيانات، وتعمل معظم أدوات الشبكة الاحتياطية هذه جنباً إلى جنب مع أدوات الأمان والمراقبة للتأكد من أنّ البيانات التي يتم إرسالها عبر الشبكة آمنة ولن تضيع.</p>]]></content>
+      
+      
+      <categories>
+        
+        <category>شبكات</category>
+        
+      </categories>
+      
+      
+        <tags>
+          
+          <tag>الاجهزه</tag>
+          
+          <tag>طلاب الشبكات</tag>
+          
+          <tag>كايبلات</tag>
           
         </tags>
       
@@ -33,19 +120,25 @@
       <link href="/taiz.cnd.blog.com/2022/12/08/type-network-tools/type-network-tools/"/>
       <url>/2022/12/08/type-network-tools/type-network-tools/</url>
       <published>Thu Dec 08 2022 20:51:13 GMT+0300</published>
-      <modified>Fri Dec 09 2022 00:54:52 GMT+0300</modified>
+      <modified>Fri Dec 09 2022 18:57:15 GMT+0300</modified>
       
         <content type="html"><![CDATA[<p>1- مستكشف Portable Storage</p><p>برنامج (Portable Storage Explorer): هو برنامج يتيح للمستخدمين عرض والوصول إلى الأجهزة المحمولة المتصلة بأجهزة الكمبيوتر البعيدة داخل منطقة محلية معينة أو شبكة لاسلكية، ويصل إلى محركات أقراص (USB) والأقراص المضغوطة وأقراص (DVD-ROM) والأرقام التسلسلية واسم الجهاز، ونوع الجهاز والمورد وأسماء المنتجات وكل مكتبة جهاز محمول، ويحدد آخر مرة تم فيها تنظيف كل جهاز.</p><p>2- برنامج IE Asterisk Password Uncover</p><p>برنامج (IE Asterisk Password Uncover): هو برنامج يتيح للمستخدمين الكشف عن كلمات المرور التي تظهر عليها علامات النجمة في قناع نماذج الويب في (Internet Explorer)، وتلك المخزنة على جهاز كمبيوتر المستخدم، ويكشف البرنامج غالباً عن كلمات المرور المنسية ومع ذلك فإنّه يكشف أيضاً عن كلمات مرور المستخدمين الآخرين على جهاز الكمبيوتر المعني.</p><p>3- برنامج FreeWebLink Submitter</p><p>برنامج (FreeWebLink Submitter): هو برنامج يتيح للمستخدمين إرسال معلومات حول موقع ويب معين إلى محركات البحث والأدلة، ويتضمن خيارات سهلة الاستخدام لإرسال عناوين (URL) أو الكلمات الرئيسية أو عينات المحتوى أو البيانات الأخرى إلى محركات البحث الشهيرة، مثل (Google) و(Yahoo) و(Bing)، بالإضافة إلى أدلة الويب مثل (Digg).<br>“URL” هي اختصار لـ “Uniform Resource Locator”.</p><p>4- برنامج NetTaskExecNetTask</p><p>برنامج (NetTaskExecNetTask): هو برنامج يسمح للمستخدم بالوصول إلى البرامج والتطبيقات والأحداث وجدولتها في وقت محدد في المستقبل القريب على جهاز كمبيوتر بعيد، ويعمل (NetTaskExec) مع كل من الشبكات المحلية والشبكات اللاسلكية وينفذ الأوامر.</p>]]></content>
       
       
+      <categories>
+        
+        <category>برامج</category>
+        
+      </categories>
+      
       
         <tags>
           
-          <tag>tag1</tag>
+          <tag>مهندس الشبكات</tag>
           
-          <tag>tag2</tag>
+          <tag>اجهزه الشبكات</tag>
           
-          <tag>tag3</tag>
+          <tag>برامج</tag>
           
         </tags>
       
@@ -58,10 +151,16 @@
       <link href="/taiz.cnd.blog.com/2022/12/08/network-tools/network-tools/"/>
       <url>/2022/12/08/network-tools/network-tools/</url>
       <published>Thu Dec 08 2022 20:42:04 GMT+0300</published>
-      <modified>Fri Dec 09 2022 02:38:43 GMT+0300</modified>
+      <modified>Fri Dec 09 2022 18:57:15 GMT+0300</modified>
       
         <content type="html"><![CDATA[<p><strong>أدوات إدارة الشبكة:</strong> هي أي نوع من البرامج التي تساعد في إنشاء شبكة لاسلكية أو صيانتها أو توزيعها، حيث تساعد أدوات شبكات الكمبيوتر في إنشاء موقع الويب وصيانته وإعلانه وأمانه وتعديله وإنّهم مسؤولون عن صيانة شبكات المنطقة المحلية، خاصةً في المواقف التي تتضمن عشرات أو مئات أجهزة الكمبيوتر داخل نفس الشبكة، كما تُستخدم أدوات شبكات الكمبيوتر للأغراض المنزلية والتجارية وهي متاحة للبيع أو مجاناً.</p><p>تُستخدم شبكات الحاسوب لربط جهاز كمبيوتر بآخر لتسهيل نقل البيانات، والإنترنت هو أكبر شبكة في العالم، حيث هناك العديد من أنواع الشبكات المختلفة والنوعان الأساسيان هما الشبكات اللاسلكية والشبكات السلكية، كما تستخدم الشبكات اللاسلكية أجهزة توجيه (Wi-Fi) لتوصيل أجهزة الكمبيوتر والأجهزة الأخرى بالإنترنت لاسلكياً.</p><p>على الرغم من أنّ معظم المنازل والمؤسسات تستخدم الشبكات اللاسلكية وأجهزة توجيه (Wi-Fi) في الوقت الحاضر لا تزال هناك حاجة منتشرة للشبكات السلكية، كما أنّ الشبكات السلكية أقوى بكثير وأسرع من الشبكات اللاسلكية وكما أنّها أقل تكلفة مقارنة بالشبكات اللاسلكية، ولامتلاك شبكة سلكية هي أنّه لا داعي للقلق بشأن أي تداخل من وجود مستخدمين آخرين على نفس القناة اللاسلكية.</p><p>ومع ذلك فإنّ إنشاء شبكة سلكية وصيانتها يتطلب استخدام العديد من المكونات مثل الكابلات (Cat5) و(Cat6) وكابلات (Ethernet)، والهاتف وكابلات (USB) وكابلات (FireWire) بالإضافة إلى لوحات التصحيح وعلاوة على ذلك من أجل صيانة واستكشاف أخطاء الشبكة السلكية وإصلاحها، هناك حاجة أيضاً إلى أدوات وملحقات شبكات أخرى.</p><p>تتمثل إحدى مشكلات الشبكات السلكية في أنّه عندما تتوقف عن العمل قد يكون استكشاف الأخطاء وإصلاحها أكثر صعوبة مقارنة بالشبكات اللاسلكية، وهذا هو المكان الذي يمكن أن يساعدك فيه اختبار كبل الشبكة ويُعد اختبار كابل الشبكة جهازاً مفيداً يتيح لك التحقق من استمرارية الكابل؛ لمعرفة ما إذا كانت الإشارة قوية بما يكفي للوصول إلى الشبكة، ويساعد هذا في التخلص من مشكلات اتصال الكابلات أثناء استكشاف المشكلات وإصلاحها.</p><p>كما أنّه لا يجب توصيل دائرة سلكية مباشرة بجهاز اختبار كابل الشبكة ويجب استخدامه فقط بعد فصل الكابل عن جهاز التوجيه والمودم والكمبيوتر، ويتكون جهاز اختبار كبل الشبكة من جزأين هُما جهاز الاختبار وجهاز التحكم عن بُعد، ويتم التعامل مع اثنين أو ثلاثة موصلات وهناك أيضاً موصل (Ethernet RJ-45) وكابل الهاتف موصلات (RJ-11) وواحد (BNC) للكابل المحوري.</p><p>يحتوي جهاز التحكم عن بعد على موصلات للإيثرنت وكابل الهاتف، ويُعد استخدام جهاز اختبار كابل الشبكة أمراً بسيطاً، بحيث يتم توصيل الكابل بالمنفذ الأيمن في جهاز الاختبار وتوصيل جهاز التحكم عن بُعد بالطرف الآخر، وبمجرد تشغيل جهاز اختبار كابل الشبكة سيتم التمكن من معرفة ما إذا كانت مشكلة الشبكة تكمن في الاتصال، وإذا لم يحدث ذلك فستكون قد تم استبعاده ويمكن متابعة تحري الخلل وإصلاحه.</p>]]></content>
       
+      
+      <categories>
+        
+        <category>اجهزه الشبكات</category>
+        
+      </categories>
       
       
         <tags>
@@ -106,7 +205,7 @@
       <link href="/taiz.cnd.blog.com/2022/12/07/About-Cnd-website/About-Cnd-website/"/>
       <url>/2022/12/07/About-Cnd-website/About-Cnd-website/</url>
       <published>Wed Dec 07 2022 21:31:39 GMT+0300</published>
-      <modified>Thu Dec 08 2022 01:49:42 GMT+0300</modified>
+      <modified>Fri Dec 09 2022 18:57:15 GMT+0300</modified>
       
         <content type="html"><![CDATA[<p>CND is anamazing majored common these days.This web pag has all infomation you want to know about cnd. In this pag you will find every day new information about network . If you are network engineering and  you have to visit this web pag</p>]]></content>
       
@@ -114,11 +213,11 @@
       
         <tags>
           
-          <tag>tag1</tag>
+          <tag>شبكات</tag>
           
-          <tag>tag2</tag>
+          <tag>برمجه</tag>
           
-          <tag>tag3</tag>
+          <tag>تصميم مواقع</tag>
           
         </tags>
       
