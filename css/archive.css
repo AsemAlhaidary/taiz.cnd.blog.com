@@ -1,0 +1,95 @@
+.paginatorContainer {
+  display: none;
+}
+.archiveCollection {
+  --archiveSpacing: 2em;
+  padding: 2em var(--sitePadding);
+  width: 100%;
+  font-family: var(--fontFamily);
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem {
+  list-style-type: none;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem:not(:first-child) {
+  margin-top: 1em;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .toggleButton {
+  display: none;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .toggleButton:checked ~ .toggleLabel .arrowIcon {
+  transform: rotate(-90deg);
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .toggleButton:checked ~ .yearlyList {
+  height: 0;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .toggleLabel {
+  position: sticky;
+  top: var(--navBarHeight);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .toggleLabel .arrowIcon {
+  transition: 0.1s ease-in-out;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .toggleLabel .year {
+  color: var(--primaryText);
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList {
+  padding-left: var(--archiveSpacing);
+  overflow: hidden;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList .recordItem {
+  padding: 0.2em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList .recordItem:hover,
+.archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList .recordItem:focus-within {
+  border-color: var(--accent);
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList .recordItem .postRecord {
+  --arrowLeftSpace: 8%;
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  line-height: 1.4;
+  color: var(--secondaryText);
+  text-decoration: none;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList .recordItem .postRecord .postDate {
+  display: inline-block;
+  min-width: 8ch;
+}
+.archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList .recordItem .postRecord .postTitle {
+  display: block;
+  padding: 0.5em;
+  padding-left: var(--arrowLeftSpace);
+  flex-grow: 1;
+  color: var(--accent);
+  font-size: 0.8em;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  clip-path: polygon(100% 0%, 100% 100%, var(--arrowLeftSpace) 100%, 0% 50%, var(--arrowLeftSpace) 0%);
+}
+.archiveCollection .listViewArchive .archiveList .recordItem {
+  margin-top: 5px;
+}
+.archiveCollection .listViewArchive .archiveList .recordItem .monthRec {
+  font-size: 0.8em;
+  line-height: 1.4;
+  color: var(--secondaryText);
+}
+.archiveCollection .listViewArchive .archiveList .recordItem .monthRec .record {
+  display: inline-block;
+  min-width: 11ch;
+}
+.archiveCollection .listViewArchive .archiveList .recordItem .monthRec .separator {
+  padding: 0 5px;
+}
+.archiveCollection .listViewArchive .archiveList .recordItem .monthRec .postRecord {
+  color: var(--accent);
+  text-decoration: underline;
+}

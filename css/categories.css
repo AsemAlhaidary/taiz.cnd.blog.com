@@ -1,0 +1,45 @@
+.paginatorContainer {
+  display: none;
+}
+.categoriesCollection {
+  --categorySpacing: 2em;
+  --dashedLineWidth: 2px;
+  padding: 2em var(--sitePadding);
+  width: 100%;
+}
+.categoriesCollection .icon {
+  padding: 2px 0;
+  display: flex;
+  align-self: flex-start;
+}
+.categoriesCollection .icon svg {
+  height: var(--iconSize);
+}
+.categoriesCollection .treeViewCategories .categories-list {
+  padding-left: var(--categorySpacing);
+}
+.categoriesCollection .treeViewCategories .categories-list > .categories-list-item:not(:last-child) {
+  margin-bottom: 1em;
+}
+.categoriesCollection .treeViewCategories .categories-list .categories-list-child {
+  padding-left: var(--categorySpacing);
+  overflow: hidden;
+}
+.categoriesCollection .treeViewCategories .categories-list .categories-list-item {
+  line-height: 2;
+  font-family: 'Poppins';
+}
+.categoriesCollection .treeViewCategories .categories-list .categories-list-item .categories-list-link,
+.categoriesCollection .treeViewCategories .categories-list .categories-list-item .categories-list-count {
+  color: var(--accent);
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.categoriesCollection .treeViewCategories .categories-list .categories-list-item .categories-list-link {
+  text-decoration: none;
+}
+.categoriesCollection .treeViewCategories .categories-list .categories-list-item .categories-list-count {
+  font-weight: bold;
+  margin-left: 0.5em;
+}

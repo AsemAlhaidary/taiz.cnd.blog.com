@@ -1,0 +1,49 @@
+.hero {
+  padding: calc(var(--navBarHeight) + var(--navBarSpacing)) 0 calc(var(--navBarHeight) + (var(--navBarSpacing) * 2));
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  min-height: 100vh;
+}
+.hero .heroImage {
+  padding: 0 var(--sitePadding);
+}
+.hero .heroImage .image {
+  display: inline-block;
+  width: 100%;
+  aspect-ratio: 2/1;
+  background-color: var(--secondaryText);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hero .heroContent {
+  padding: 0 var(--sitePadding);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  grid-row-gap: 1.5em;
+  font-family: var(--fontFamily);
+}
+.hero .heroContent .primarySect {
+  grid-column: 1/-1;
+}
+.hero .heroContent .primarySect .primaryTitle {
+  margin-bottom: 0.5em;
+  font-size: var(--titleSize);
+  color: var(--primaryText);
+}
+.hero .heroContent .primarySect .primaryDesc {
+  font-size: var(--descriptionSize);
+  color: var(--secondaryText);
+}
+.hero .heroContent .secondarySect .secondaryTitle {
+  margin-bottom: 0.5em;
+  font-size: var(--subTitleSize);
+  color: var(--primaryText);
+}
+.hero .heroContent .secondarySect .secondaryDesc {
+  font-size: var(--descriptionSize);
+  color: var(--secondaryText);
+}

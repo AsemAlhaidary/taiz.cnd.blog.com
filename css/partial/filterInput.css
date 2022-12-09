@@ -1,0 +1,25 @@
+.filterContainer {
+  display: none;
+  padding: 0 var(--sitePadding) 2em;
+}
+.filterContainer .filterInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+  font-family: var(--fontFamily);
+}
+.filterContainer .filterInput .input {
+  padding: 0.3em 0.8em;
+  max-width: 15em;
+  color: var(--secondaryText);
+  font-size: var(--descriptionSize);
+  border-radius: 5px;
+  background-color: var(--secondary);
+  border: 1px solid var(--secondaryText);
+}
+.filterContainer .filterInput .input:focus {
+  border-color: transparent;
+  box-shadow: 0 0 5px var(--accent);
+}

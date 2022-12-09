@@ -1,0 +1,261 @@
+.paginatorContainer {
+  position: relative;
+  width: 100%;
+  padding: 0 var(--sitePadding) 1em;
+}
+.paginatorContainer .paginator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Poppins';
+}
+.paginatorContainer .paginator.twoPages {
+  justify-content: center;
+}
+.paginatorContainer .paginator.twoPages .navigateButton {
+  border-radius: 5px 0 0 5px;
+}
+.paginatorContainer .paginator.twoPages .navigateButton:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.paginatorContainer .paginator.twoPages .navigateButton.disabled {
+  padding: 0.3em;
+}
+.paginatorContainer .paginator.twoPages .navigateButton.disabled .text {
+  display: none;
+}
+.paginatorContainer .paginator.twoPages + .scrollHint {
+  display: none;
+}
+.paginatorContainer .paginator a {
+  text-decoration: none;
+}
+.paginatorContainer .paginator .navigateButton {
+  padding: 0.3em 0.8em 0.3em 0.3em;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--accent);
+  background-color: unset;
+}
+.paginatorContainer .paginator .navigateButton:last-child {
+  padding: 0.3em 0.3em 0.3em 0.8em;
+}
+.paginatorContainer .paginator .navigateButton.disabled {
+  border-color: var(--secondary-transparent);
+}
+.paginatorContainer .paginator .navigateButton.disabled .icon svg path {
+  fill: var(--secondary-transparent);
+}
+.paginatorContainer .paginator .navigateButton.disabled .text {
+  color: var(--secondary-transparent);
+}
+.paginatorContainer .paginator .navigateButton:hover:not(.disabled),
+.paginatorContainer .paginator .navigateButton:focus-within:not(.disabled) {
+  background-color: var(--accent);
+}
+.paginatorContainer .paginator .navigateButton:hover:not(.disabled) .icon svg path,
+.paginatorContainer .paginator .navigateButton:focus-within:not(.disabled) .icon svg path {
+  fill: var(--primary);
+}
+.paginatorContainer .paginator .navigateButton:hover:not(.disabled) .text,
+.paginatorContainer .paginator .navigateButton:focus-within:not(.disabled) .text {
+  color: var(--primary);
+}
+.paginatorContainer .paginator .navigateButton .icon {
+  display: flex;
+}
+.paginatorContainer .paginator .navigateButton .icon svg {
+  height: calc(var(--iconSize) / 1.6);
+}
+.paginatorContainer .paginator .navigateButton .icon svg path {
+  fill: var(--accent);
+}
+.paginatorContainer .paginator .navigateButton .text {
+  font-size: 0.8em;
+  color: var(--accent);
+}
+.paginatorContainer .paginator .pagesCount {
+  --numSpaces: 0.5em;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+.paginatorContainer .paginator .pagesCount .numGroup {
+  margin: 0 var(--numSpaces);
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.paginatorContainer .paginator .pagesCount .numGroup .pageNumber:not(:last-child) {
+  margin-right: var(--numSpaces);
+}
+.paginatorContainer .paginator .pagesCount .numGroup::-webkit-scrollbar {
+  height: 1px;
+  background-color: var(--primary);
+}
+.paginatorContainer .paginator .pagesCount .separator,
+.paginatorContainer .paginator .pagesCount .pageNumber {
+  font-size: 1.25em;
+  color: var(--secondaryText);
+}
+.paginatorContainer .paginator .pagesCount .separator.active,
+.paginatorContainer .paginator .pagesCount .pageNumber.active {
+  font-size: 1.8em;
+  color: var(--accent);
+  font-weight: 600;
+}
+.paginatorContainer .scrollHint {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.paginatorContainer .scrollHint .scrollSect {
+  display: flex;
+  align-items: center;
+}
+.paginatorContainer .scrollHint .scrollSect .hint {
+  display: flex;
+}
+.paginatorContainer .scrollHint .scrollSect .hint .arrow {
+  display: inline-block;
+  height: calc(var(--iconSize) / 6);
+  width: calc(var(--iconSize) / 6);
+  border-left: 1px solid var(--secondary-transparent);
+  border-bottom: 1px solid var(--secondary-transparent);
+  transform: rotate(45deg);
+  animation: leftHint 2s ease-in-out infinite;
+}
+.paginatorContainer .scrollHint .scrollSect .hint .arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.paginatorContainer .scrollHint .scrollSect .hint .arrow:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.paginatorContainer .scrollHint .scrollSect .hint.rightHint .arrow {
+  border-right: 1px solid var(--secondary-transparent);
+  border-top: 1px solid var(--secondary-transparent);
+  border-left: unset;
+  border-bottom: unset;
+  animation-name: rightHint;
+}
+.paginatorContainer .scrollHint .scrollSect .hint.rightHint .arrow:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.paginatorContainer .scrollHint .scrollSect .hint.rightHint .arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.paginatorContainer .scrollHint .scrollSect .hint.rightHint .arrow:nth-child(3) {
+  animation-delay: 0s;
+}
+@-moz-keyframes leftHint {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-100%, 100%);
+  }
+}
+@-webkit-keyframes leftHint {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-100%, 100%);
+  }
+}
+@-o-keyframes leftHint {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-100%, 100%);
+  }
+}
+@keyframes leftHint {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-100%, 100%);
+  }
+}
+@-moz-keyframes rightHint {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(100%, -100%);
+  }
+}
+@-webkit-keyframes rightHint {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(100%, -100%);
+  }
+}
+@-o-keyframes rightHint {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(100%, -100%);
+  }
+}
+@keyframes rightHint {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(100%, -100%);
+  }
+}
+.paginatorContainer .scrollHint .scrollSect .text {
+  color: var(--secondary-transparent);
+  font-family: 'Poppins';
+  font-size: 0.6em;
+}

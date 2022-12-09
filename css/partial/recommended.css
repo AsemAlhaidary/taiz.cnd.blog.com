@@ -1,0 +1,81 @@
+.recommended {
+  --gap: 1em;
+  padding: 2em var(--sitePadding);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+.recommended .title {
+  color: var(--primaryText);
+  font-size: var(--titleSize);
+  font-family: 'Poppins';
+  text-transform: capitalize;
+}
+.recommended .recommendedContainer {
+  --cardHeight: 200px;
+  --cardWidth: 260px;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: var(--gap);
+  border-radius: 20px;
+  background-color: var(--secondary);
+}
+.recommended .recommendedContainer .recommendedPost {
+  position: relative;
+  height: var(--cardHeight);
+  width: var(--cardWidth);
+  border-radius: 10px;
+}
+.recommended .recommendedContainer .recommendedPost .postLink .background {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: overlay;
+}
+.recommended .recommendedContainer .recommendedPost .postLink .content {
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--cardHeight);
+  width: var(--cardWidth);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 10px;
+  font-family: var(--fontFamily);
+}
+.recommended .recommendedContainer .recommendedPost .postLink .content .postTitle {
+  font-size: var(--subTitleSize);
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+.recommended .recommendedContainer .recommendedPost .postLink .content .discription {
+  font-size: var(--descriptionSize);
+  text-align: center;
+  color: #b6b6b8;
+}
+.recommended .recommendedContainer .recommendedPost .postLink .content .readMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.recommended .recommendedContainer .recommendedPost .postLink .content .readMore .icon {
+  height: var(--iconSize);
+  width: var(--iconSize);
+}
+.recommended .recommendedContainer .recommendedPost .postLink .content .readMore .readMoreText {
+  font-size: var(--subTitleSize);
+  color: var(--accent);
+}

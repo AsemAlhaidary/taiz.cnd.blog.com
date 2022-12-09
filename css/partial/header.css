@@ -1,0 +1,115 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: var(--navBarHeight);
+  width: 100vw;
+  transition: 0.3s ease-in-out;
+  z-index: 5;
+}
+.header.onTop {
+  height: calc(var(--navBarHeight) + 10px);
+}
+.header.onTop .logoImage {
+  box-shadow: unset;
+}
+.header .logoImage {
+  padding: 0 var(--sitePadding);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+.header .logoImage .logo {
+  font-size: 1.5em;
+  color: var(--accent);
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+.header .navBar {
+  position: fixed;
+  right: var(--navBarSpacing);
+  bottom: var(--navBarSpacing);
+  left: var(--navBarSpacing);
+  height: var(--navBarHeight);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header .navBar .search,
+.header .navBar .navButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.header .navBar .search::after,
+.header .navBar .navButton::after {
+  content: '';
+  position: absolute;
+  height: calc(var(--navBarHeight) - 6px);
+  width: calc(var(--navBarHeight) - 6px);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+.header .navBar .search.highlight .icon svg path,
+.header .navBar .navButton.highlight .icon svg path {
+  fill: var(--accent);
+}
+.header .navBar .search.highlight .icon svg #stroke,
+.header .navBar .navButton.highlight .icon svg #stroke {
+  stroke: var(--accent) !important;
+}
+.header .navBar .search.highlight .itemName,
+.header .navBar .navButton.highlight .itemName {
+  color: var(--accent);
+}
+.header .navBar .search .icon,
+.header .navBar .navButton .icon {
+  position: relative;
+}
+.header .navBar .search .icon .scrollUp,
+.header .navBar .navButton .icon .scrollUp {
+  --scrollHintSize: 0.6em;
+  --scrollHintSpacing: 1px;
+  --scrollHintWeight: 1px;
+  position: absolute;
+  top: var(--scrollHintSpacing);
+  right: var(--scrollHintSpacing);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--scrollHintSize);
+  height: calc(var(--scrollHintSize) * 1);
+  border-radius: calc(var(--scrollHintSize) / 2);
+  border: var(--scrollHintWeight) solid var(--accent);
+  transform: scale(3);
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.header .navBar .search .icon .scrollUp span,
+.header .navBar .navButton .icon .scrollUp span {
+  display: block;
+  margin: auto;
+  height: calc(var(--scrollHintSize) / 4);
+  width: calc(var(--scrollHintSize) / 4);
+  border-top: var(--scrollHintWeight) solid var(--accent);
+  border-left: var(--scrollHintWeight) solid var(--accent);
+  transform: rotate(45deg);
+}
+.header .navBar .search .icon svg,
+.header .navBar .navButton .icon svg {
+  height: var(--iconSize);
+}
+.header .navBar .search .itemName,
+.header .navBar .navButton .itemName {
+  font-size: 0.6em;
+  font-family: 'Poppins';
+  color: var(--primaryText);
+}

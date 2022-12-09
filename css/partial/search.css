@@ -1,0 +1,281 @@
+#search {
+  display: none;
+}
+#search:checked ~ .searchSection {
+  top: calc(var(--navBarHeight) + var(--navBarSpacing));
+}
+#search:checked ~ .header .navBar .search::after {
+  background-color: var(--secondary);
+  opacity: 1;
+}
+.searchSection {
+  --edgeSpacing: 2em;
+  position: fixed;
+  top: -100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em;
+  width: calc(100vw - (var(--sitePadding) * 2));
+  border-radius: 10px;
+  font-family: var(--fontFamily);
+  overflow-x: hidden;
+  transition: 0.3s ease-in-out;
+  z-index: 10;
+}
+.searchSection .searchDialog {
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.searchSection .searchDialog .searchField {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3em;
+}
+.searchSection .searchDialog .searchField .icon {
+  padding: 0.4em;
+  display: flex;
+}
+.searchSection .searchDialog .searchField .icon svg {
+  height: calc(var(--iconSize) / 1.5);
+}
+.searchSection .searchDialog .searchField .icon.searchGlass {
+  padding: 0;
+}
+.searchSection .searchDialog .searchField .icon.searchGlass svg {
+  height: var(--iconSize);
+  padding: 0;
+}
+.searchSection .searchDialog .searchField .icon.close {
+  background-color: var(--secondary-transparent);
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--secondaryText);
+}
+.searchSection .searchDialog .searchField noscript .searchNoscript {
+  color: var(--primaryText);
+  font-size: 2em;
+  text-align: center;
+}
+.searchSection .searchDialog .searchField #localSearchInput {
+  padding: 0.5em;
+  display: none;
+  flex-grow: 1;
+  background-color: var(--secondary-transparent);
+  color: var(--primaryText);
+  border: 1px solid var(--secondaryText);
+  border-radius: 5px;
+}
+.searchSection .searchDialog .searchField #localSearchInput:focus {
+  border-color: var(--accent);
+}
+.searchSection .searchDialog .searchField #localSearchInput::-webkit-input-placeholder {
+  opacity: 1;
+}
+.searchSection .searchDialog .searchField #localSearchInput::-webkit-search-decoration,
+.searchSection .searchDialog .searchField #localSearchInput::-webkit-search-results-button,
+.searchSection .searchDialog .searchField #localSearchInput::-webkit-search-results-decoration {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.searchSection .searchDialog .options {
+  display: none;
+}
+.searchSection .searchDialog .options .dropDown .searchOptions {
+  display: none;
+}
+.searchSection .searchDialog .options .dropDown #date {
+  display: none;
+}
+.searchSection .searchDialog .options .dropDown #date:checked ~ .optionsBox {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+.searchSection .searchDialog .options .dropDown #date:checked ~ .optionsBox .searchOption .dateOption .optionIcon {
+  background-color: var(--secondary);
+}
+.searchSection .searchDialog .options .dropDown #date:checked ~ .optionsBox .searchOption .dateOption .date {
+  display: flex;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox {
+  --iconSize: 2em;
+  padding: 0.4em 0;
+  display: flex;
+  gap: 0.3em;
+  font-family: var(--fontFamily);
+}
+.searchSection .searchDialog .options .dropDown .optionsBox::-webkit-scrollbar {
+  height: 0.5vw;
+  background-color: var(--primary);
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption {
+  list-style-type: none;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .input:not([type="date"]) {
+  display: none;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .input:checked ~ .optionIcon {
+  background-color: var(--secondary);
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .optionIcon {
+  display: flex;
+  border-radius: 3px;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .optionIcon svg {
+  height: var(--iconSize);
+  width: var(--iconSize);
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .optionName {
+  display: none;
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  padding: 0.5em 1em;
+  transform: translateX(-50%);
+  color: var(--primaryText);
+  font-size: 0.4em;
+  text-align: center;
+  background-color: var(--secondary);
+  border-radius: 0.4em;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .date {
+  display: none;
+  align-items: center;
+  gap: 0.4em;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .date .dateSelect {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .date .dateSelect .selectInput {
+  padding: 0.5em;
+  color: var(--primaryText);
+  background-color: var(--semiTransparentColor);
+  border: unset;
+  border-radius: 0.4em;
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .date .dateSelect .selectInput .optionInput {
+  color: var(--primaryText);
+}
+.searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .date .dateSeparated {
+  color: var(--primaryText);
+}
+.searchSection #localSearchResult {
+  width: 100%;
+  max-height: calc(100vh - (var(--navBarHeight) * 2) - (var(--edgeSpacing) * 2) - (var(--iconSize) * 6));
+  overflow: hidden;
+  overflow-y: auto;
+}
+.searchSection #localSearchResult .searchResultList .resultsNum {
+  font-size: 0.6em;
+  color: var(--primaryText);
+  opacity: 0.8;
+}
+.searchSection #localSearchResult .searchResultList li.result {
+  position: relative;
+  list-style-type: none;
+  margin-top: 1em;
+}
+.searchSection #localSearchResult .searchResultList li.result::before {
+  content: '';
+  position: absolute;
+  top: -0.5em;
+  height: 1px;
+  width: 100%;
+  background-color: var(--primaryText);
+  border-radius: 1px;
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink {
+  text-decoration: none;
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .searchKeyword {
+  background-color: var(--accent);
+  color: rgba(255,255,255,0.533);
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .searchResultTitle {
+  display: block;
+  color: var(--primaryText);
+  font-size: 1em;
+  font-weight: 500;
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .searchResultContent {
+  color: var(--primaryText);
+  font-size: 0.8em;
+  font-weight: 0;
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .categoriesContainer,
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer {
+  display: flex;
+  gap: 0.5em;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .categoriesContainer .icon,
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer .icon {
+  padding: 2px 0;
+  display: flex;
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .categoriesContainer .icon svg,
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer .icon svg {
+  height: calc(var(--iconSize) / 1.5);
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .categoriesContainer .searchedItem .searched,
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer .searchedItem .searched {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: var(--accent);
+  font-size: 0.6em;
+  font-family: var(--fontFamily);
+  border-radius: 5px;
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .categoriesContainer .searchedItem .searched .searchKeyword,
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer .searchedItem .searched .searchKeyword {
+  color: #fff;
+  background-color: var(--secondaryText);
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .categoriesContainer .searchedItem .searched {
+  text-decoration: underline;
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer .searchedItem .searched {
+  color: #fff;
+  background-color: var(--secondaryText);
+  border-color: var(--secondaryText);
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer .searchedItem .searched .searchKeyword {
+  color: rgba(255,255,255,0.533);
+  background-color: var(--accent);
+}
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer .searchedItem .searched:hover,
+.searchSection #localSearchResult .searchResultList li.result .resultLink .tagsContainer .searchedItem .searched:focus {
+  transform: scale(1.1);
+}
+.searchSection .noMatch {
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--primaryText);
+  font-size: 0.8em;
+}
+.searchSection .noMatch.show {
+  display: flex;
+}
+.searchSection .noMatch .icon {
+  opacity: 0.6;
+}
+.searchSection .noMatch .icon svg {
+  height: calc(var(--iconSize) * 3);
+}
