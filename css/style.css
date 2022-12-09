@@ -261,6 +261,9 @@ body {
   text-align: center;
   background-color: var(--secondary);
   border-radius: 0.4em;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .searchSection .searchDialog .options .dropDown .optionsBox .searchOption .label .date {
   display: none;
@@ -554,7 +557,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
   grid-row-gap: 1.5em;
-  font-family: 'Poppins';
+  font-family: var(--fontFamily);
 }
 .hero .heroContent .primarySect {
   grid-column: 1/-1;
@@ -810,9 +813,12 @@ body {
   display: inline-block;
   padding: 0.5em 1em;
   color: var(--accent);
-  font-size: 0.6em;
+  font-size: var(--smallFontSize);
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
   border-radius: 5px;
 }
 .postsContainer .post .content .postTags .tagsContainer .tagItem .tag:hover,
@@ -820,6 +826,10 @@ body {
   color: #fff;
   background-color: var(--secondaryText);
   border-color: var(--secondaryText);
+}
+.postsContainer .post .content .postTags .tagsContainer .tagItem .tag .postsInside {
+  font-weight: bold;
+  font-size: var(--subTitleSize);
 }
 .footer {
   padding: 1em var(--sitePadding);

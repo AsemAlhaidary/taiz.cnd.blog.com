@@ -200,9 +200,12 @@
   display: inline-block;
   padding: 0.5em 1em;
   color: var(--accent);
-  font-size: 0.6em;
+  font-size: var(--smallFontSize);
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
   border-radius: 5px;
 }
 .postArticle .postFooter .postTags .tagsContainer .tagItem .tag:hover,
@@ -210,4 +213,8 @@
   color: #fff;
   background-color: var(--secondaryText);
   border-color: var(--secondaryText);
+}
+.postArticle .postFooter .postTags .tagsContainer .tagItem .tag .postsInside {
+  font-weight: bold;
+  font-size: var(--subTitleSize);
 }
