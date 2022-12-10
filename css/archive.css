@@ -51,11 +51,11 @@
   border-color: var(--accent);
 }
 .archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList .recordItem .postRecord {
-  --arrowLeftSpace: 8%;
   display: flex;
   align-items: center;
-  font-size: 0.8em;
+  font-size: var(--descriptionSize);
   line-height: 1.4;
+  text-indent: 2em;
   color: var(--secondaryText);
   text-decoration: none;
 }
@@ -65,14 +65,11 @@
 }
 .archiveCollection .treeViewArchive .archiveList .archiveItem .yearlyList .recordItem .postRecord .postTitle {
   display: block;
-  padding: 0.5em;
-  padding-left: var(--arrowLeftSpace);
+  padding: 0.5em 2em;
   flex-grow: 1;
   color: var(--accent);
-  font-size: 0.8em;
-  background-color: var(--secondaryColor);
+  font-size: var(--descriptionSize);
   border-radius: 5px;
-  clip-path: polygon(100% 0%, 100% 100%, var(--arrowLeftSpace) 100%, 0% 50%, var(--arrowLeftSpace) 0%);
 }
 .archiveCollection .listViewArchive .archiveList .recordItem {
   margin-top: 5px;

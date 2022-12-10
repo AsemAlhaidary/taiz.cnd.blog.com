@@ -17,8 +17,8 @@ function handleFilter(e) {
   let masterContainer = masterElements.masterContainer;
   let itemsContainer = masterElements.itemsContainer;
 
-  // // Get the "noMatch" section
-  // let noMatch = masterContainer.getElementsByClassName('noMatch')[0];
+  // Get the "noMatch" section
+  let noMatch = masterContainer.getElementsByClassName('noMatch')[0];
 
   // Get the value from input field, and the items to filter
   let value = e.target.value.trim();
@@ -49,8 +49,8 @@ function handleFilter(e) {
     }
   }
 
-  // // Show the "noMatch" container if there are no elements visible
-  // noMatch.classList.toggle('show', showedElements == 0);
+  // Show the "noMatch" container if there are no elements visible
+  noMatch.classList.toggle('show', showedElements == 0);
 }
 
 /**

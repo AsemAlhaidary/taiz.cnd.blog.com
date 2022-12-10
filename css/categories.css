@@ -16,7 +16,7 @@
   height: var(--iconSize);
 }
 .categoriesCollection .treeViewCategories .categories-list {
-  padding-left: var(--categorySpacing);
+  padding: 0 var(--categorySpacing);
 }
 .categoriesCollection .treeViewCategories .categories-list > .categories-list-item:not(:last-child) {
   margin-bottom: 1em;

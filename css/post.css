@@ -1,10 +1,12 @@
 .postArticle {
   --gap: 1em;
-  padding: 2em 1.5em;
+  padding: 2em var(--sitePadding);
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--gap);
   font-family: var(--fontFamily);
+  overflow: hidden;
 }
 .postArticle * {
   word-break: break-word;
@@ -54,7 +56,10 @@
   font-family: serif;
 }
 .postArticle .postBody .postContent h2 {
-  margin: 2em 0 1em;
+  margin: 0 0 1em;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5em;
   color: var(--primaryText);
   font-size: 1.5em;
   font-weight: 600;
@@ -74,6 +79,12 @@
   font-size: 1.3em;
   font-weight: 500;
   font-family: serif;
+}
+.postArticle .postBody .postContent ul {
+  padding: 0 2em;
+}
+.postArticle .postBody .postContent ul li {
+  font-size: var(--descriptionSize);
 }
 .postArticle .postBody .postContent ul li:not(:last-child) {
   margin-bottom: 0.3em;

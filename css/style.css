@@ -79,7 +79,7 @@ body {
   }
   .recommended .recommendedContainer .recommendedPost .postLink .content .readMore .icon {
     --iconPositionY: calc(((var(--cardHeight) / 2) - (((var(--iconSize) * var(--scaleValue)) / 2) + 36px)) * -1);
-    --iconPositionX: calc((var(--cardWidth) / 2) - (((var(--iconSize) * var(--scaleValue)) / 2) + 78px));
+    --iconPositionX: calc((var(--cardWidth) / 2) - (((var(--iconSize) * var(--scaleValue)) / 2) + 104px));
     --scaleValue: 3;
   }
   .recommended .recommendedContainer .recommendedPost .postLink .content .readMore .icon svg {
@@ -479,6 +479,7 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  cursor: pointer;
 }
 .header .navBar .search::after,
 .header .navBar .navButton::after {
@@ -547,7 +548,7 @@ body {
   color: var(--primaryText);
 }
 .hero {
-  padding: calc(var(--navBarHeight) + var(--navBarSpacing)) 0 calc(var(--navBarHeight) + (var(--navBarSpacing) * 2));
+  padding: calc(var(--navBarHeight) + var(--navBarSpacing)) 0 2em;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -688,7 +689,7 @@ body {
   gap: var(--gap);
 }
 .postsContainer .post {
-  max-width: 20em;
+  width: 20em;
   display: flex;
   flex-direction: column;
   font-family: var(--fontFamily);
@@ -701,7 +702,6 @@ body {
   width: 100%;
   aspect-ratio: 2/1;
   overflow: hidden;
-  border-radius: 0 20px 20px 0;
 }
 .postsContainer .post .backgroundSect .background {
   display: block;
@@ -946,7 +946,7 @@ body {
     aspect-ratio: 4/1;
   }
   .postsContainer .post {
-    max-width: 55em;
+    width: 55em;
     flex-direction: row;
   }
 }
