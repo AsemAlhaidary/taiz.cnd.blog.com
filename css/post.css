@@ -38,7 +38,7 @@
   color: var(--secondaryText);
 }
 .postArticle .postTitle .title {
-  font-size: var(--subTitleSize);
+  font-size: var(--titleSize);
   font-weight: 600;
   color: var(--primaryText);
   text-decoration: none;
@@ -48,30 +48,41 @@
   background-color: var(--secondaryText);
   opacity: 0.4;
 }
+.postArticle .postBody .postContent h1,
+.postArticle .postBody .postContent h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.postArticle .postBody .postContent h1 a,
+.postArticle .postBody .postContent h2 a {
+  margin: 0 1em;
+  text-decoration: none;
+}
+.postArticle .postBody .postContent h1 a::before,
+.postArticle .postBody .postContent h2 a::before {
+  content: '#';
+  font-size: calc(var(--titleSize) * 2);
+  color: var(--secondaryText);
+}
+.postArticle .postBody .postContent h1 a:hover::before,
+.postArticle .postBody .postContent h2 a:hover::before,
+.postArticle .postBody .postContent h1 a:focus::before,
+.postArticle .postBody .postContent h2 a:focus::before {
+  color: var(--accent);
+}
 .postArticle .postBody .postContent h1 {
   margin-bottom: 2em;
   color: var(--primaryText);
-  font-size: 1em;
-  font-weight: 400;
+  font-size: var(--titleSize);
   font-family: serif;
 }
 .postArticle .postBody .postContent h2 {
-  margin: 0 0 1em;
-  display: flex;
-  align-items: flex-end;
-  gap: 0.5em;
+  margin: 1.5em 0 1em;
   color: var(--primaryText);
-  font-size: 1.5em;
+  font-size: var(--subTitleSize);
   font-weight: 600;
   font-family: serif;
-}
-.postArticle .postBody .postContent h2::before {
-  content: '►';
-  display: inline-block;
-  margin-right: 0.5em;
-  font-size: 0.5em;
-  color: var(--accent);
-  transform: translateY(calc(-35%));
 }
 .postArticle .postBody .postContent h3 {
   margin: 1em 0 0.5em;
@@ -81,6 +92,7 @@
   font-family: serif;
 }
 .postArticle .postBody .postContent ul {
+  margin: 0.5em 0;
   padding: 0 2em;
 }
 .postArticle .postBody .postContent ul li {
@@ -102,7 +114,7 @@
   max-width: 100% !important;
 }
 .postArticle .postBody .postContent p {
-  margin-bottom: 1em;
+  margin: 1em 0;
   color: var(--primaryText);
   font-size: 0.8em;
 }

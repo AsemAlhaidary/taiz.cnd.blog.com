@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Introduction To Network Layer</title>
+      <link href="/taiz.cnd.blog.com/2022/12/12/Network Layer/introduction-to-network-layer/"/>
+      <url>/taiz.cnd.blog.com/2022/12/12/Network%20Layer/introduction-to-network-layer/</url>
+      <published>Mon Dec 12 2022 16:45:37 GMT+0300</published>
+      <modified>Mon Dec 12 2022 17:07:37 GMT+0300</modified>
+      
+        <content type="html"><![CDATA[<h1 id="مقدمة-الى-Network-Layer"><a href="#مقدمة-الى-Network-Layer" class="headerlink" title="مقدمة الى Network Layer"></a>مقدمة الى Network Layer</h1><p><strong>طبقة الشبكة:</strong> (Network Layer) أو الطبقة الثالثة (Layer 3) هي طبقة مُجردة تحمل الرقم (3) في نموذج الاتصال المعياري (OSI)، تقع فوق طبقة ربط البيانات وتحت طبقة النقل، تهتم هذه الطبقة بوظائف التوجيه والعنونة المنطقية وتشكيل رزم البيانات، تُسمّى وحدات بيانات البروتوكول في هذه الطبقة برزمة البيانات.</p><p>تنتمي <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_(%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA)">البروتوكولات</a> العاملة في هذه الطبقة إلى عائلات مختلفة مثل <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%AA%D9%88%D8%AC%D9%8A%D9%87">بروتوكولات التوجيه</a> التي تقدم خدمات التوجيه، كبروتوكول المسار الأقصر <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A7%D9%84%D8%AA%D9%88%D8%AC%D9%8A%D9%87_%D8%A7%D9%84%D9%85%D8%AD%D8%B3%D9%86_%D8%A8%D9%8A%D9%86_%D8%A7%D9%84%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA_%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9">وبروتوكول التوجيه المحسن بين البوابات الداخلية</a> (EIGRP) والبروتوكولات التي تقدم وظائف العنونة المنطقية وتشكيل الررزم، والتي تسمى <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%AA%D9%88%D8%AC%D9%8A%D9%87#%D8%A7%D9%84%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%88%D8%AC%D9%87%D8%A9">بعائلة البروتوكولات المُوجّهة</a> مثل الإصدارين الرابع (IPv4) والسادس (IPv6) من <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">بروتوكول الإنترنت</a>، أو البروتوكولات المساعدة تقوم بوظائف إضافية تكمّل وظائف هذه الطبقة مثل بروتوكول <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%B1%D8%B3%D8%A7%D8%A6%D9%84_%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">رسائل التحكم في شبكة الإنترنت</a> (ICMP) <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9_%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9_%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">وبروتوكول إدارة مجموعة الإنترنت</a> (IGMP).</p><h2 id="وظائف-والخدمان-المشمولة-ضمن-طبقة-الشبكة"><a href="#وظائف-والخدمان-المشمولة-ضمن-طبقة-الشبكة" class="headerlink" title="وظائف والخدمان المشمولة ضمن طبقة الشبكة"></a>وظائف والخدمان المشمولة ضمن طبقة الشبكة</h2><ul><li>العنونة المنطقية</li><li>التوجيه</li><li>تشكيل رزم البيانات</li></ul><h2 id="بروتوكولات-طبقة-الشبكة"><a href="#بروتوكولات-طبقة-الشبكة" class="headerlink" title="بروتوكولات طبقة الشبكة"></a>بروتوكولات طبقة الشبكة</h2><ul><li><p>بروتوكولات التشبيك</p><ul><li><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1_%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9_%D9%85%D9%86_%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">الإصدار الرابع من بروتوكول الإنترنت</a> (IPv4).</li><li><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1_%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3_%D9%85%D9%86_%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">الإصدار السادس من بروتوكول الإنترنت</a> (IPv6).</li><li><a href="https://ar.wikipedia.org/w/index.php?title=%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%AA%D8%A8%D8%A7%D8%AF%D9%84_%D8%B1%D8%B2%D9%85_%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA&action=edit&redlink=1">بروتوكول تبادل رزم الشبكات</a> (IPx)</li></ul></li><li><p>بروتوكولات التوجيه</p><ul><li><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1_%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D8%B1_%D8%A3%D9%88%D9%84%D8%A7">بروتوكول المسار الأقصر</a> (OSPF).</li><li><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A7%D9%84%D8%AA%D9%88%D8%AC%D9%8A%D9%87_%D8%A7%D9%84%D9%85%D8%AD%D8%B3%D9%86_%D8%A8%D9%8A%D9%86_%D8%A7%D9%84%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA_%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9">بروتوكول التوجيه المحسن بين البوابات الداخلية</a> (EIGRP).</li><li><a href="https://ar.wikipedia.org/w/index.php?title=%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%AA%D9%88%D8%AC%D9%8A%D9%87_%D8%A7%D9%84%D8%A8%D8%AB_%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA%D9%8A_%D8%A8%D8%AD%D8%B3%D8%A8_%D8%B4%D8%B9%D8%A7%D8%B9_%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%81%D8%A9&action=edit&redlink=1">بروتوكول توجيه البث المجموعاتي بحسب شعاع المسافة</a> (DVMRP).</li></ul></li><li><p>البروتوكولات المساعدة</p><ul><li><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%B1%D8%B3%D8%A7%D8%A6%D9%84_%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">بروتوكول رسائل التحكم في شبكة الإنترنت</a> (ICMP).</li><li><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9_%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9_%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">بروتوكول إدارة مجموعة الإنترنت</a> (IGMP).</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+        
+        <category>Network Layer</category>
+        
+      </categories>
+      
+      
+        <tags>
+          
+          <tag>Networking</tag>
+          
+          <tag>Knowledge</tag>
+          
+          <tag>Protocols</tag>
+          
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>networks protocol بروتوكول الشبكه</title>
       <link href="/taiz.cnd.blog.com/2022/12/09/networks-protocol/networks-protocol/"/>
       <url>/taiz.cnd.blog.com/2022/12/09/networks-protocol/networks-protocol/</url>
@@ -20,9 +51,9 @@
           
           <tag>Knowledge</tag>
           
-          <tag>Tools</tag>
-          
           <tag>Protocols</tag>
+          
+          <tag>Tools</tag>
           
         </tags>
       
