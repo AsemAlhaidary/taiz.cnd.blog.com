@@ -19,7 +19,7 @@ html[data-theme="light"] {
   --secondary: #f9fbfc;
   --primaryText: #1a212f;
   --secondaryText: #868688;
-  --accent: #fa8900;
+  --accent: #2b87bb;
   --secondary-transparent: rgba(249,251,252,0.667);
   --shadowColor: rgba(28,38,57,0.333);
 }
@@ -43,6 +43,7 @@ html {
 }
 body {
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 0.5vw;
@@ -551,16 +552,16 @@ body {
   padding: calc(var(--navBarHeight) + var(--navBarSpacing)) 0 2em;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 1em;
-  min-height: 100vh;
 }
 .hero .heroImage {
   padding: 0 var(--sitePadding);
 }
 .hero .heroImage .image {
   display: inline-block;
-  width: 100%;
+  width: 100vw;
   aspect-ratio: 2/1;
   background-color: var(--secondaryText);
   background-size: cover;

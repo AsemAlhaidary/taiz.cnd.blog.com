@@ -486,35 +486,10 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
 
 <div class="hero">
   <div class="heroImage">
-    <span class="image lazyload" data-src="/taiz.cnd.blog.com/img/4.jpg"></span>
+    
+    <span class="image lazyload" data-src="/taiz.cnd.blog.com/img/14.jpg"></span>
   </div>
-  <div class="heroContent">
-    <div class="primarySect">
-      <h1 class="primaryTitle">Who is the network engineer .</h1>
-      <p class="primaryDesc">The network engineer is the one who plans,implements and supervises the network and works to improve network performance and increase its security .Network engineer's tasks include installation and configuration ,maintenance,optimizing and security.</p>
-    </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">Installation and configuration .</h2>
-        <p class="secondaryDesc">Network engineers install and configure equipment like routers , switches ,WAN accelerators and load balancers.</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">Maintenance</h2>
-        <p class="secondaryDesc">Which involoves ongoing monitoring ,installing patches and upgrades, and troubleshooting .</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">Optimizing</h2>
-        <p class="secondaryDesc">Must to be reliable , fast and the performance of network well goog.</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">Security</h2>
-        <p class="secondaryDesc">Network is a critical part of network design.Network engineers implement and maintain security measures like firewalls ,VPNs,and antivirus software.</p>
-      </div>
-    
-  </div>
+  
 </div>
 
 <article id="post-About-Cnd-website/About-Cnd-website" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" class="postArticle">
@@ -532,16 +507,41 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
 
           let period = currentDate.getTime() - postDate.getTime();
 
-          period = Math.floor(period / 1000 / 60 / 60 / 24);
+          let mins = period / 1000 / 60;
+          let hours = mins / 60;
+          let days = hours / 24;
+          let timeText;
+          let time;
 
-          return period;
+          if (Math.floor(days) == 0) {
+            if (Math.floor(hours) == 0) {
+              if (Math.floor(mins) == 0) {
+                time = secs;
+                timeText = "time.secs";
+              } else {
+                time = mins;
+                timeText = "دقائق";
+              }
+            } else {
+              time = hours;
+              timeText = "ساعات";
+            }
+          } else {
+            time = days;
+            timeText = "days";
+          }
+
+          period = Math.floor(time);
+
+          return period + " " + timeText + " ago";
         }
 
         document.write(getPeriod(1670437899000));
       </script>
       <noscript>
-        5
-      </noscript>&nbsp;days&nbsp;ago
+        13
+        &nbsp;days&nbsp;ago
+      </noscript>
     </p>
   </div>
 </div>

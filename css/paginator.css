@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
   font-family: 'Poppins';
 }
 .paginatorContainer .paginator.twoPages {
@@ -34,6 +35,7 @@
   padding: 0.3em 0.8em 0.3em 0.3em;
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   border-radius: 5px;
   border: 1px solid var(--accent);
   background-color: unset;
@@ -42,13 +44,13 @@
   padding: 0.3em 0.3em 0.3em 0.8em;
 }
 .paginatorContainer .paginator .navigateButton.disabled {
-  border-color: var(--secondary-transparent);
+  border-color: var(--secondaryText);
 }
 .paginatorContainer .paginator .navigateButton.disabled .icon svg path {
-  fill: var(--secondary-transparent);
+  fill: var(--secondaryText);
 }
 .paginatorContainer .paginator .navigateButton.disabled .text {
-  color: var(--secondary-transparent);
+  color: var(--secondaryText);
 }
 .paginatorContainer .paginator .navigateButton:hover:not(.disabled),
 .paginatorContainer .paginator .navigateButton:focus-within:not(.disabled) {
@@ -123,8 +125,8 @@
   display: inline-block;
   height: calc(var(--iconSize) / 6);
   width: calc(var(--iconSize) / 6);
-  border-left: 1px solid var(--secondary-transparent);
-  border-bottom: 1px solid var(--secondary-transparent);
+  border-left: 1px solid var(--secondaryText);
+  border-bottom: 1px solid var(--secondaryText);
   transform: rotate(45deg);
   animation: leftHint 2s ease-in-out infinite;
 }
@@ -135,8 +137,8 @@
   animation-delay: 0.4s;
 }
 .paginatorContainer .scrollHint .scrollSect .hint.rightHint .arrow {
-  border-right: 1px solid var(--secondary-transparent);
-  border-top: 1px solid var(--secondary-transparent);
+  border-right: 1px solid var(--secondaryText);
+  border-top: 1px solid var(--secondaryText);
   border-left: unset;
   border-bottom: unset;
   animation-name: rightHint;
@@ -255,7 +257,7 @@
   }
 }
 .paginatorContainer .scrollHint .scrollSect .text {
-  color: var(--secondary-transparent);
+  color: var(--secondaryText);
   font-family: 'Poppins';
   font-size: 0.6em;
 }

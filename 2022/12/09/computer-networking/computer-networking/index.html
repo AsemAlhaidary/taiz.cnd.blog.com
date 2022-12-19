@@ -486,35 +486,10 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
 
 <div class="hero">
   <div class="heroImage">
-    <span class="image lazyload" data-src="/taiz.cnd.blog.com/img/3.jpg"></span>
+    
+    <span class="image lazyload" data-src="/taiz.cnd.blog.com/2022/12/09/computer-networking/computer-networking/1.jpg"></span>
   </div>
-  <div class="heroContent">
-    <div class="primarySect">
-      <h1 class="primaryTitle">من هو مهندس الشبكات</h1>
-      <p class="primaryDesc">مهندس الشبكه هو الذي يخطط وينفذ ويشرف على الشبكه ويعمل على تحسين أداء الشبكهوزيادة امانها ومن مهام مهندس الشبكات التثبيت والتكوين والصيانه والتحسين والامان</p>
-    </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">التثبيت والتكوين</h2>
-        <p class="secondaryDesc">يقوم مهندسو الشبكات بتثبيت وتكوين معدات الشبكه مثل router و switch و WAN accelerators و load balancers .</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">الصيانه</h2>
-        <p class="secondaryDesc">التي تتضمن المراقبه المستمره وتثبيت التصحيحات والترقيات واستكشاف الاخطاء واصلاحها</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">التحسين</h2>
-        <p class="secondaryDesc">يجب ان تكون الشبكه موثوقه "reliable" وسريعه وضمان ان اداء شبكتهم يكون جيد</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">الامان</h2>
-        <p class="secondaryDesc">يعد أمان الشبكه جزءا مهما من تصميم الشبكه .يقوم مهندسو الشبكه بتنفيذ اجراءات الأمان مثل firewalls وبرامج مكافحة الفيروسات "VPN" و antivirus software .</p>
-      </div>
-    
-  </div>
+  
 </div>
 
 <article id="post-computer-networking/computer-networking" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" class="postArticle">
@@ -532,16 +507,41 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
 
           let period = currentDate.getTime() - postDate.getTime();
 
-          period = Math.floor(period / 1000 / 60 / 60 / 24);
+          let mins = period / 1000 / 60;
+          let hours = mins / 60;
+          let days = hours / 24;
+          let timeText;
+          let time;
 
-          return period;
+          if (Math.floor(days) == 0) {
+            if (Math.floor(hours) == 0) {
+              if (Math.floor(mins) == 0) {
+                time = secs;
+                timeText = "time.secs";
+              } else {
+                time = mins;
+                timeText = "دقائق";
+              }
+            } else {
+              time = hours;
+              timeText = "ساعات";
+            }
+          } else {
+            time = days;
+            timeText = "أيام";
+          }
+
+          period = Math.floor(time);
+
+          return period + " " + timeText + " مضت";
         }
 
         document.write(getPeriod(1670543862000));
       </script>
       <noscript>
-        ٤
-      </noscript>&nbsp;أيام&nbsp;مضت
+        ١٢
+        &nbsp;أيام&nbsp;مضت
+      </noscript>
     </p>
   </div>
 </div>

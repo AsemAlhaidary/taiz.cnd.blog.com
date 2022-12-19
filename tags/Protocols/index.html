@@ -482,35 +482,10 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
 
 <div class="hero">
   <div class="heroImage">
-    <span class="image lazyload" data-src="/taiz.cnd.blog.com/img/4.jpg"></span>
+    
+    <span class="image lazyload" data-src="/taiz.cnd.blog.com/img/18.jpg"></span>
   </div>
-  <div class="heroContent">
-    <div class="primarySect">
-      <h1 class="primaryTitle">من هو مهندس الشبكات</h1>
-      <p class="primaryDesc">مهندس الشبكه هو الذي يخطط وينفذ ويشرف على الشبكه ويعمل على تحسين أداء الشبكهوزيادة امانها ومن مهام مهندس الشبكات التثبيت والتكوين والصيانه والتحسين والامان</p>
-    </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">التثبيت والتكوين</h2>
-        <p class="secondaryDesc">يقوم مهندسو الشبكات بتثبيت وتكوين معدات الشبكه مثل router و switch و WAN accelerators و load balancers .</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">الصيانه</h2>
-        <p class="secondaryDesc">التي تتضمن المراقبه المستمره وتثبيت التصحيحات والترقيات واستكشاف الاخطاء واصلاحها</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">التحسين</h2>
-        <p class="secondaryDesc">يجب ان تكون الشبكه موثوقه "reliable" وسريعه وضمان ان اداء شبكتهم يكون جيد</p>
-      </div>
-    
-      <div class="secondarySect">
-        <h2 class="secondaryTitle">الامان</h2>
-        <p class="secondaryDesc">يعد أمان الشبكه جزءا مهما من تصميم الشبكه .يقوم مهندسو الشبكه بتنفيذ اجراءات الأمان مثل firewalls وبرامج مكافحة الفيروسات "VPN" و antivirus software .</p>
-      </div>
-    
-  </div>
+  
 </div>
 
 
@@ -519,14 +494,15 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
   
     <div class="post">
       <div class="backgroundSect">
-        <a href="/taiz.cnd.blog.com/2022/12/12/Network%20Layer/introduction-to-network-layer/" class="background lazyload" data-src="/taiz.cnd.blog.com/img/8.jpg"></a>
+        
+        <a href="/taiz.cnd.blog.com/2022/12/12/Network_Layer/introduction-to-network-layer/" class="background lazyload" data-src="/taiz.cnd.blog.com/img/21.jpg"></a>
       </div>
       <div class="content">
         <div class="postHeader">
   <img src="/taiz.cnd.blog.com/img/asem.jpg" alt="Publisher Name" class="publisherImg">
   <div class="publisherInfo">
     <h3 class="publisherName">
-      Asem Alhaidary
+      Asem Al-haidary
     </h3>
     <p class="postPeriod">
       <script charset="utf-8" type="text/javascript">
@@ -536,21 +512,46 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
 
           let period = currentDate.getTime() - postDate.getTime();
 
-          period = Math.floor(period / 1000 / 60 / 60 / 24);
+          let mins = period / 1000 / 60;
+          let hours = mins / 60;
+          let days = hours / 24;
+          let timeText;
+          let time;
 
-          return period;
+          if (Math.floor(days) == 0) {
+            if (Math.floor(hours) == 0) {
+              if (Math.floor(mins) == 0) {
+                time = secs;
+                timeText = "time.secs";
+              } else {
+                time = mins;
+                timeText = "دقائق";
+              }
+            } else {
+              time = hours;
+              timeText = "ساعات";
+            }
+          } else {
+            time = days;
+            timeText = "أيام";
+          }
+
+          period = Math.floor(time);
+
+          return period + " " + timeText + " مضت";
         }
 
         document.write(getPeriod(1670852737000));
       </script>
       <noscript>
-        ١
-      </noscript>&nbsp;أيام&nbsp;مضت
+        ٨
+        &nbsp;أيام&nbsp;مضت
+      </noscript>
     </p>
   </div>
 </div>
         <div class="postTitle">
-          <a href="/taiz.cnd.blog.com/2022/12/12/Network%20Layer/introduction-to-network-layer/" class="title">Introduction To Network Layer</a>
+          <a href="/taiz.cnd.blog.com/2022/12/12/Network_Layer/introduction-to-network-layer/" class="title">Introduction To Network Layer</a>
         </div>
         <div class="postDescription">
           <p class="description">مقدمة الى Network Layerطبقة الشبكة: (Network Layer) أو الطبقة الثالثة (Layer 3) هي طبقة مُجردة تحمل الرقم (3) في نموذج الاتصال المعياري (OSI)، تقع فوق طبقة ربط البيانات وتحت طبقة النقل، تهتم هذه الطبقة بوظائف التوجيه والعنونة ⋯</p>
@@ -562,7 +563,7 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
     <span class="icon"><svg version="1.1" viewBox="130 130 500 500" xmlns="http://www.w3.org/2000/svg"><path d="m501.55 330.16h-28.934v-7.0586c0-25.289-20.555-45.844-45.797-45.844l-66.207 0.003907-32.203-32.156c-1.9414-1.9922-4.6406-3.082-7.4336-3.082h-70.516c-25.242 0-45.844 20.555-45.844 45.797v176.41c0 25.242 20.602 45.797 45.844 45.797h251.14c25.242 0 45.844-20.555 45.844-45.797l-0.003906-88.23c-0.046875-25.242-20.602-45.84-45.891-45.84zm-226.37 45.84v88.18c0 13.641-11.082 24.723-24.723 24.723-13.688 0-24.723-11.082-24.723-24.723l0.003906-176.36c0-13.641 11.035-24.723 24.723-24.723h66.16l32.203 32.203c1.9883 1.9453 4.6367 3.0352 7.4336 3.0352h70.562c13.59 0 24.723 11.082 24.723 24.723v7.0547h-130.57c-25.242 0.046875-45.797 20.645-45.797 45.887zm251.14 88.184c0 13.641-11.082 24.723-24.723 24.723l-212.64-0.003906c4.6406-7.1523 7.2461-15.629 7.2461-24.723v-88.18c0-13.641 11.082-24.723 24.723-24.723h180.58c13.641 0 24.723 11.082 24.723 24.723l-0.003906 88.184z" fill="var(--primaryText)" /></svg></span>
   
 
-  <ul class="categories-list"><li class="categories-list-item"><a class="categories-list-link" href="/taiz.cnd.blog.com/categories/Network-Layer/">Network Layer</a></li></ul>
+  <ul class="categories-list"><li class="categories-list-item"><a class="categories-list-link" href="/taiz.cnd.blog.com/categories/OSI-Model/">OSI Model</a><ul class="categories-list-child"><li class="categories-list-item"><a class="categories-list-link" href="/taiz.cnd.blog.com/categories/OSI-Model/Network-Layer/">Network Layer</a></li></ul></li></ul>
 
 
         </div>
@@ -598,7 +599,8 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
   
     <div class="post">
       <div class="backgroundSect">
-        <a href="/taiz.cnd.blog.com/2022/12/09/networks-protocol/networks-protocol/" class="background lazyload" data-src="/taiz.cnd.blog.com/img/8.jpg"></a>
+        
+        <a href="/taiz.cnd.blog.com/2022/12/09/networks-protocol/networks-protocol/" class="background lazyload" data-src="/taiz.cnd.blog.com/img/2.jpg"></a>
       </div>
       <div class="content">
         <div class="postHeader">
@@ -615,16 +617,41 @@ See: https://developer.apple.com/library/safari/documentation/AppleApplications/
 
           let period = currentDate.getTime() - postDate.getTime();
 
-          period = Math.floor(period / 1000 / 60 / 60 / 24);
+          let mins = period / 1000 / 60;
+          let hours = mins / 60;
+          let days = hours / 24;
+          let timeText;
+          let time;
 
-          return period;
+          if (Math.floor(days) == 0) {
+            if (Math.floor(hours) == 0) {
+              if (Math.floor(mins) == 0) {
+                time = secs;
+                timeText = "time.secs";
+              } else {
+                time = mins;
+                timeText = "دقائق";
+              }
+            } else {
+              time = hours;
+              timeText = "ساعات";
+            }
+          } else {
+            time = days;
+            timeText = "أيام";
+          }
+
+          period = Math.floor(time);
+
+          return period + " " + timeText + " مضت";
         }
 
         document.write(getPeriod(1670607910000));
       </script>
       <noscript>
-        ٣
-      </noscript>&nbsp;أيام&nbsp;مضت
+        ١١
+        &nbsp;أيام&nbsp;مضت
+      </noscript>
     </p>
   </div>
 </div>

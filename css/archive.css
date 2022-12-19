@@ -55,7 +55,6 @@
   align-items: center;
   font-size: var(--descriptionSize);
   line-height: 1.4;
-  text-indent: 2em;
   color: var(--secondaryText);
   text-decoration: none;
 }

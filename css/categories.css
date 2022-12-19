@@ -16,13 +16,13 @@
   height: var(--iconSize);
 }
 .categoriesCollection .treeViewCategories .categories-list {
-  padding: 0 var(--categorySpacing);
+  padding-right: var(--categorySpacing);
 }
 .categoriesCollection .treeViewCategories .categories-list > .categories-list-item:not(:last-child) {
   margin-bottom: 1em;
 }
 .categoriesCollection .treeViewCategories .categories-list .categories-list-child {
-  padding-left: var(--categorySpacing);
+  padding-right: var(--categorySpacing);
   overflow: hidden;
 }
 .categoriesCollection .treeViewCategories .categories-list .categories-list-item {
@@ -41,5 +41,5 @@
 }
 .categoriesCollection .treeViewCategories .categories-list .categories-list-item .categories-list-count {
   font-weight: bold;
-  margin-left: 0.5em;
+  margin: 0 0.5em;
 }
